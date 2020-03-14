@@ -73,70 +73,198 @@ function updateClock () {
 $(document).ready(function(){
 
   var currentHour = date.getHours();
+  console.log(currentHour);
 
-  var timeOne = $("#time1");
-    timeOne = 1;
-
-    if (timeOne === currentHour) {
-    timeOne.addClass("present");
-    
-  } else if (timeOne > currentHour) {
-    timeOne.addClass("future");
-    }
-    else {
+    if (1 === currentHour) {
+      $("#time1").addClass("present");
+    } else if (1 > currentHour) {
+      $("#time1").addClass("future");
+    } else {
       $("#time1").addClass("past")
     }
 
-var timeTwo = $("#time2");
-timeOne = 2;
+    if (2 === currentHour) {
+      $("#time2").addClass("present");
+    } else if (1 > currentHour) {
+      $("#time2").addClass("future");
+    } else {
+      $("#time2").addClass("past")
+    }
 
-if (timeTwo === currentHour) {
-timeTwo.addClass("present");
+    if (3 === currentHour) {
+      $("#time3").addClass("present");
+    } else if (1 > currentHour) {
+      $("#time3").addClass("future");
+    } else {
+      $("#time3").addClass("past")
+    }
 
-} else if (timeTwo > currentHour) {
-timeTwo.addClass("future");
-}
-else {
-  $("#time2").addClass("past")
-}
+    if (4 === currentHour) {
+      $("#time4").addClass("present");
+    } else if (1 > currentHour) {
+      $("#time4").addClass("future");
+    } else {
+      $("#time4").addClass("past")
+    }
 
-var timeThree = $("#time3");
-timeOne = 3;
+    if (5 === currentHour) {
+      $("#time5").addClass("present");
+    } else if (5 > currentHour) {
+      $("#time5").addClass("future");
+    } else {
+      $("#time5").addClass("past")
+    }
 
-if (timeThree === currentHour) {
-timeThree.addClass("present");
+    if (6 === currentHour) {
+      $("#time6").addClass("present");
+    } else if (6 > currentHour) {
+      $("#time6").addClass("future");
+    } else {
+      $("#time6").addClass("past")
+    }
 
-} else if (timeThree > currentHour) {
-timeThree.addClass("future");
-}
-else {
-  $("#time3").addClass("past")
-}
+    if (7 === currentHour) {
+      $("#time7").addClass("present");
+    } else if (7 > currentHour) {
+      $("#time7").addClass("future");
+    } else {
+      $("#time7").addClass("past")
+    }
 
+    if (8 === currentHour) {
+      $("#time8").addClass("present");
+    } else if (8 > currentHour) {
+      $("#time8").addClass("future");
+    } else {
+      $("#time8").addClass("past")
+    }
 
+    if (9 === currentHour) {
+      $("#time9").addClass("present");
+    } else if (9 > currentHour) {
+      $("#time9").addClass("future");
+    } else {
+      $("#time9").addClass("past")
+    }
 
-var timeTwoThree = $("#time23");
+    if (10 === currentHour) {
+      $("#time10").addClass("present");
+    } else if (10 > currentHour) {
+      $("#time10").addClass("future");
+    } else {
+      $("#time10").addClass("past")
+    }
 
-if (23 === currentHour) {
-  timeTwoThree.addClass("present");
+    if (11 === currentHour) {
+      $("#time11").addClass("present");
+    } else if (11 > currentHour) {
+      $("#time11").addClass("future");
+    } else {
+      $("#time11").addClass("past")
+    }
 
-} else if (23 > currentHour) {
-  timeTwoThree.addClass("future");
-}
-else {
-  $("#time23").addClass("past")
-}
+    if (12 === currentHour) {
+      $("#time12").addClass("present");
+    } else if (12 > currentHour) {
+      $("#time12").addClass("future");
+    } else {
+      $("#time12").addClass("past")
+    }
+    
+    if (13 === currentHour) {
+      $("#time13").addClass("present");
+    } else if (13 > currentHour) {
+      $("#time13").addClass("future");
+    } else {
+      $("#time13").addClass("past")
+    }
 
-var timeTwoFour = $("#time24");
+    if (14 === currentHour) {
+      $("#time14").addClass("present");
+    } else if (14 > currentHour) {
+      $("#time14").addClass("future");
+    } else {
+      $("#time14").addClass("past")
+    }
 
-if (24 === currentHour) {
-  timeTwoFour.addClass("present");
+    if (15 === currentHour) {
+      $("#time15").addClass("present");
+    } else if (15 > currentHour) {
+      $("#time15").addClass("future");
+    } else {
+      $("#time15").addClass("past")
+    }
 
-} else if (24 > currentHour) {
-  timeTwoFour.addClass("future");
-}
-else {
-  $("#time24").addClass("past")
-}
+    if (16 === currentHour) {
+      $("#time16").addClass("present");
+    } else if (16 > currentHour) {
+      $("#time16").addClass("future");
+    } else {
+      $("#time16").addClass("past")
+    }
+
+    if (17 === currentHour) {
+      $("#time17").addClass("present");
+    } else if (17 > currentHour) {
+      $("#time17").addClass("future");
+    } else {
+      $("#time17").addClass("past")
+    }
+
+    if (18 === currentHour) {
+      $("#time18").addClass("present");
+    } else if (18 > currentHour) {
+      $("#time18").addClass("future");
+    } else {
+      $("#time18").addClass("past")
+    }
+
+    if (19 === currentHour) {
+      $("#time19").addClass("present");
+    } else if (19 > currentHour) {
+      $("#time19").addClass("future");
+    } else {
+      $("#time19").addClass("past")
+    }
+
+    if (20 === currentHour) {
+      $("#time20").addClass("present");
+    } else if (20 > currentHour) {
+      $("#time20").addClass("future");
+    } else {
+      $("#time20").addClass("past")
+    }
+
+    if (21 === currentHour) {
+      $("#time21").addClass("present");
+    } else if (21 > currentHour) {
+      $("#time21").addClass("future");
+    } else {
+      $("#time21").addClass("past")
+    }
+
+    if (22 === currentHour) {
+      $("#time22").addClass("present");
+    } else if (22 > currentHour) {
+      $("#time22").addClass("future");
+    } else {
+      $("#time22").addClass("past")
+    }
+
+    if (23 === currentHour) {
+      $("#time23").addClass("present");
+    } else if (23 > currentHour) {
+      $("#time23").addClass("future");
+    } else {
+      $("#time23").addClass("past")
+    }
+
+    if (0 === currentHour) {
+      $("#time24").addClass("present");
+    } else if (0 > currentHour) {
+      $("#time24").addClass("future");
+    } else {
+      $("#time24").addClass("past")
+    }
 
 });

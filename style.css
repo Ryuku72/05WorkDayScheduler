@@ -114,7 +114,8 @@ body {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+	transform: translate(-50%, -50%)
+	
   }
   
   textarea {
@@ -129,6 +130,38 @@ body {
 
   .description{
 	white-space: pre-wrap;
+  }
+
+  .past {
+	background-color: #d3d3d3;
+	color: white;
+	text-shadow: black 2px 2px;
+  }
+  
+  .present {
+	background-color: #ff6961;
+	color: white;
+	text-shadow: darkred 2px 2px;
+  }
+  
+  .future {
+	background-color: #77dd77;
+	color: white;
+	text-shadow: darkcyan 2px 2px;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	text-shadow: black 1px 1px;
+	opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+	color: white;
   }
   
   .saveBtn {
@@ -187,20 +220,6 @@ footer p {
     100%{   color: #000;    }
 }
   
-  .past {
-	background-color: #d3d3d3;
-	color: white;
-  }
-  
-  .present {
-	background-color: #ff6961;
-	color: white;
-  }
-  
-  .future {
-	background-color: #77dd77;
-	color: white;
-  }
   
   
   
