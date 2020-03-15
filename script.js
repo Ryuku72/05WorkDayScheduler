@@ -70,9 +70,41 @@ function updateClock () {
 
 //compare the dayplanner IDs to the Current house
 
-console.log("#time1");
-
 $(document).ready(function(){
+
+  renderLastRegisted();
+
+  function renderLastRegisted(){
+    $("#time01").val(localStorage.Time01AM);
+    $("#time02").val(localStorage.Time02AM);
+    $("#time03").val(localStorage.Time03AM);
+    $("#time04").val(localStorage.Time04AM);
+    $("#time05").val(localStorage.Time05AM);
+    $("#time06").val(localStorage.Time06AM);
+    $("#time07").val(localStorage.Time07AM);
+    $("#time08").val(localStorage.Time08AM);
+    $("#time09").val(localStorage.Time09AM);
+    $("#time10").val(localStorage.Time10AM);
+    $("#time11").val(localStorage.Time11AM);
+    $("#time12").val(localStorage.Time12PM);
+    $("#time13").val(localStorage.Time01PM);
+    $("#time14").val(localStorage.Time02PM);
+    $("#time15").val(localStorage.Time03PM);
+    $("#time16").val(localStorage.Time04PM);
+    $("#time17").val(localStorage.Time05PM);
+    $("#time18").val(localStorage.Time06PM);
+    $("#time19").val(localStorage.Time07PM);
+    $("#time20").val(localStorage.Time08PM);
+    $("#time21").val(localStorage.Time09PM);
+    $("#time22").val(localStorage.Time10PM);
+    $("#time23").val(localStorage.Time11PM);
+    $("#time24").val(localStorage.Time12AM);
+  }
+
+  $(window).on('unload', function(){
+    loadSettings();
+  });
+
 
   var currentHour = date.getHours();
   //console.log(currentHour);
@@ -86,7 +118,6 @@ $(document).ready(function(){
     } else {
       $("#time01").addClass("past")
     }
-
 
     if (2 === currentHour) {
       $("#time2").addClass("present");
@@ -264,134 +295,255 @@ $(document).ready(function(){
       $("#time23").addClass("past")
     }
 
-    if (0 === currentHour) {
+    if (24 === currentHour) {
       $("#time24").addClass("present");
-    } else if (0 > currentHour) {
+    } else if (24 > currentHour) {
       $("#time24").addClass("future");
     } else {
       $("#time24").addClass("past")
     }
 
-    
     //Local Storage
-
+ 
     $(".btn01").click(function() {
-      localStorage.btn01 = $('#time01').val();
-      $("#time01").val(localStorage.btn01);
-    });
-    
-    $(".btn02").click(function() {
-      localStorage.btn02 = $('#time02').val();
-      $("#time02").val(localStorage.btn02);
-    });
-    
-    $(".btn03").click(function() {
-      localStorage.btn03 = $('#time03').val();
-      $("#time03").val(localStorage.btn03);
+      if ($('#time01').val() === '') {
+      alert("No plans has been entered...")
+      return
+      } 
+      else {
+        localStorage.Time01AM = $('#time01').val();
+      };
     });
 
-    $(".btn04").click(function() {
-      localStorage.btn04 = $('#time04').val();
-      $("#time04").val(localStorage.btn04);
+    $(".btn02").click(function() {
+      if ($('#time02').val() === '') {
+      alert("No plans has been entered...")
+      return
+      } 
+      else {
+        localStorage.Time02AM = $('#time02').val();
+      };
+    });
+
+    $(".btn03").click(function() {
+      if ($('#time03').val() === '') {
+      alert("No plans has been entered...")
+      return
+      } 
+      else {
+        localStorage.Time03AM = $('#time03').val();
+      };
+
+      $(".btn04").click(function() {
+        if ($('#time04').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time04AM = $('#time04').val();
+        };
+      });
     });
 
     $(".btn05").click(function() {
-      localStorage.btn05 = $('#time05').val();
-      $("#time05").val(localStorage.btn05);
+      if ($('#time015').val() === '') {
+      alert("No plans has been entered...")
+      return
+      } 
+      else {
+        localStorage.Time05AM = $('#time05').val();
+      };
     });
 
     $(".btn06").click(function() {
-      localStorage.btn06 = $('#time06').val();
-      $("#time06").val(localStorage.btn06);
+      if ($('#time06').val() === '') {
+      alert("No plans has been entered...")
+      return
+      } 
+      else {
+        localStorage.Time06AM = $('#time06').val();
+      };
     });
 
     $(".btn07").click(function() {
-      localStorage.btn07 = $('#time07').val();
-      $("#time07").val(localStorage.btn07);
+      if ($('#time07').val() === '') {
+      alert("No plans has been entered...")
+      return
+      } 
+      else {
+        localStorage.Time07AM = $('#time07').val();
+      };
     });
 
     $(".btn08").click(function() {
-      localStorage.btn08 = $('#time08').val();
-      $("#time08").val(localStorage.btn08);
+      if ($('#time08').val() === '') {
+      alert("No plans has been entered...")
+      return
+      } 
+      else {
+        localStorage.Time08AM = $('#time08').val();
+      };
     });
 
     $(".btn09").click(function() {
-      localStorage.btn09 = $('#time09').val();
-      $("#time09").val(localStorage.btn09);
+      if ($('#time09').val() === '') {
+      alert("No plans has been entered...")
+      return
+      } 
+      else {
+        localStorage.Time09AM = $('#time09').val();
+      };
     });
 
-    $(".btn10").click(function() {
-      localStorage.btn10 = $('#time10').val();
-      $("#time10").val(localStorage.btn10);
-    });
+      $(".btn10").click(function() {
+        if ($('#time10').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time10AM = $('#time10').val();
+        };
+      });
 
-    $(".btn11").click(function() {
-      localStorage.btn11 = $('#time11').val();
-      $("#time11").val(localStorage.btn11);
-    });
+      $(".btn11").click(function() {
+        if ($('#time10').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time11AM = $('#time11').val();
+        };
+      });
 
-    $(".btn12").click(function() {
-      localStorage.btn12 = $('#time12').val();
-      $("#time12").val(localStorage.btn12);
-    });
+      $(".btn12").click(function() {
+        if ($('#time12').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time12PM = $('#time12').val();
+        };
+      });
 
-    $(".btn13").click(function() {
-      localStorage.btn13 = $('#time13').val();
-      $("#time13").val(localStorage.btn13);
-    });
+      $(".btn13").click(function() {
+        if ($('#time13').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time01PM = $('#time13').val();
+        };
+      });
 
-    $(".btn14").click(function() {
-      localStorage.btn14 = $('#time14').val();
-      $("#time14").val(localStorage.btn14);
-    });
+      $(".btn14").click(function() {
+        if ($('#time14').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time02PM = $('#time14').val();
+        };
+      });
 
-    $(".btn15").click(function() {
-      localStorage.btn15 = $('#time15').val();
-      $("#time15").val(localStorage.btn15);
-    });
+      $(".btn15").click(function() {
+        if ($('#time15').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time03PM = $('#time15').val();
+        };
+      });
+      
+      $(".btn16").click(function() {
+        if ($('#time16').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time04PM = $('#time16').val();
+        };
+      });
 
-    $(".btn16").click(function() {
-      localStorage.btn16 = $('#time16').val();
-      $("#time16").val(localStorage.btn16);
-    });
+      $(".btn17").click(function() {
+        if ($('#time17').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time05PM = $('#time17').val();
+        };
+      });
 
-    $(".btn17").click(function() {
-      localStorage.btn17 = $('#time17').val();
-      $("#time17").val(localStorage.btn17);
-    });
+      $(".btn18").click(function() {
+        if ($('#time18').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time06PM = $('#time18').val();
+        };
+      });
 
-    $(".btn18").click(function() {
-      localStorage.btn18 = $('#time18').val();
-      $("#time18").val(localStorage.btn18);
-    });
+      $(".btn19").click(function() {
+        if ($('#time19').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time07PM = $('#time19').val();
+        };
+      });
 
-    $(".btn19").click(function() {
-      localStorage.btn19 = $('#time19').val();
-      $("#time19").val(localStorage.btn19);
-    });
+      $(".btn20").click(function() {
+        if ($('#time20').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time08PM = $('#time20').val();
+        };
+      });
 
-    $(".btn20").click(function() {
-      localStorage.btn20 = $('#time20').val();
-      $("#time20").val(localStorage.btn20);
-    });
+      $(".btn21").click(function() {
+        if ($('#time21').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time09PM = $('#time21').val();
+        };
+      });
 
-    $(".btn21").click(function() {
-      localStorage.btn21 = $('#time21').val();
-      $("#time21").val(localStorage.btn21);
-    });
+      $(".btn22").click(function() {
+        if ($('#time22').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time10PM = $('#time22').val();
+        };
+      });
 
-    $(".btn22").click(function() {
-      localStorage.btn22 = $('#time22').val();
-      $("#time22").val(localStorage.btn22);
-    });
+      $(".btn23").click(function() {
+        if ($('#time23').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time11PM = $('#time23').val();
+        };
+      });
 
-    $(".btn23").click(function() {
-      localStorage.btn23 = $('#time23').val();
-      $("#time23").val(localStorage.btn23);
-    });
-
-    $(".btn24").click(function() {
-      localStorage.btn24 = $('#time24').val();
-      $("#time24").val(localStorage.btn24);
-    });
-});
+      $(".btn24").click(function() {
+        if ($('#time24').val() === '') {
+        alert("No plans has been entered...")
+        return
+        } 
+        else {
+          localStorage.Time12AM = $('#time24').val();
+        };
+      });
+      
+    
+})

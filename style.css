@@ -54,11 +54,13 @@ table {
 body {
 	font-size: 16px;
 	line-height: 1;
+	background-color: white;
+	background-image: url('/assets/stars.gif');
   }
     
   .jumbotron {
 	text-align: center;
-	background-image: url('https://media.giphy.com/media/puqMsg6YDodS8/giphy.gif'), url('https://media.giphy.com/media/WKVSpmzV2SjHW/giphy.gif'), url('https://media.giphy.com/media/xBd1nhXIWqk54ttwN3/giphy.gif');
+	background-image: url('/assets/sheep.gif'), url('/assets/cat.gif'), url('/assets/dog.gif');
 	background-position: left, center, right;
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-color: black;
@@ -66,7 +68,7 @@ body {
 	color: skyblue;
 	text-shadow: black 4px 4px;
 	border-radius: 0;
-	border-bottom: 20px solid black;
+	border-bottom: 10px solid black;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
   }
@@ -85,7 +87,7 @@ body {
   
   .container {
     max-width: 90%;
-    background-color: white;
+    background-color: transparent;
 	padding: 10px;
   }
 
@@ -94,28 +96,27 @@ body {
     grid-template-columns: 15% 70% 15%;
 	white-space: pre-wrap;
 	height: 80px;
-	border-top: 1px solid white;;
   }
 
   .time-block{
 	text-align: center;
 	position: relative;
-
 	height: 100%;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 	background-color: pink;
-	border-right: 1px solid black
+	border-right: 1px solid black;
+	border: 1px solid grey;
   }
 
   .time-block p{
+	color: black;
 	margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
 	transform: translate(-50%, -50%)
-	
   }
   
   textarea {
@@ -125,29 +126,33 @@ body {
 	padding: 10px;
 	line-height: 5vh;
 	text-align: center;
-	border-radius: 5px;
+	border: 1px solid grey;
   }
 
   .description{
 	white-space: pre-wrap;
   }
 
+  textarea:focus{
+	background-color: orange;
+  }
+
   .past {
 	background-color: #d3d3d3;
 	color: white;
-	text-shadow: black 2px 2px;
+	text-shadow: black 1px 1px;
   }
   
   .present {
 	background-color: #ff6961;
 	color: white;
-	text-shadow: darkred 2px 2px;
+	text-shadow: black 1px 1px;
   }
   
   .future {
 	background-color: #77dd77;
 	color: white;
-	text-shadow: darkcyan 2px 2px;
+	text-shadow: black 1px 1px;
   }
 
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -171,6 +176,7 @@ body {
 	border-bottom-right-radius: 15px;
 	background-color: skyblue;
 	color: white;
+	border: 1px solid grey;
   }
 
   .saveBtn:hover {
