@@ -73,6 +73,7 @@ function updateClock () {
 $(document).ready(function(){
 
   renderLastRegisted();
+  eventPlaceholder();
 
   function renderLastRegisted(){
     $("#time01").val(localStorage.Time01AM);
@@ -100,11 +101,6 @@ $(document).ready(function(){
     $("#time23").val(localStorage.Time11PM);
     $("#time24").val(localStorage.Time12AM);
   }
-
-  $(window).on('unload', function(){
-    loadSettings();
-  });
-
 
   var currentHour = date.getHours();
   //console.log(currentHour);
@@ -544,6 +540,13 @@ $(document).ready(function(){
           localStorage.Time12AM = $('#time24').val();
         };
       });
-      
-    
+
+      //change placeholder text at different width
+
+function eventPlaceholder() {
+      if ($(window).width() < 768 ) {
+        $(".description").attr("placeholder","events details");
+    }
+    else $(".description").attr("placeholder","event planner description");
+  }  
 })
