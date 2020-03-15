@@ -70,81 +70,86 @@ function updateClock () {
 
 //compare the dayplanner IDs to the Current house
 
+console.log("#time1");
+
 $(document).ready(function(){
 
   var currentHour = date.getHours();
-  console.log(currentHour);
+  //console.log(currentHour);
 
+  //Colour Hue
+     
     if (1 === currentHour) {
-      $("#time1").addClass("present");
+      $("#time01").addClass("present");
     } else if (1 > currentHour) {
-      $("#time1").addClass("future");
+      $("#time01").addClass("future");
     } else {
-      $("#time1").addClass("past")
+      $("#time01").addClass("past")
     }
+
 
     if (2 === currentHour) {
       $("#time2").addClass("present");
-    } else if (1 > currentHour) {
-      $("#time2").addClass("future");
+    } else if (2 > currentHour) {
+      $("#time02").addClass("future");
     } else {
-      $("#time2").addClass("past")
+      $("#time02").addClass("past")
     }
 
     if (3 === currentHour) {
-      $("#time3").addClass("present");
-    } else if (1 > currentHour) {
-      $("#time3").addClass("future");
+      $("#time03").addClass("present");
+    } else if (3 > currentHour) {
+      $("#time03").addClass("future");
     } else {
-      $("#time3").addClass("past")
+      $("#time03").addClass("past")
     }
 
     if (4 === currentHour) {
-      $("#time4").addClass("present");
-    } else if (1 > currentHour) {
-      $("#time4").addClass("future");
+      $("#time04").addClass("present");
+    } else if (4 > currentHour) {
+      $("#time04").addClass("future");
     } else {
-      $("#time4").addClass("past")
+      $("#time04").addClass("past")
     }
 
     if (5 === currentHour) {
-      $("#time5").addClass("present");
+      $("#time05").addClass("present");
     } else if (5 > currentHour) {
-      $("#time5").addClass("future");
+      $("#time05").addClass("future");
     } else {
-      $("#time5").addClass("past")
+      $("#time05").addClass("past")
     }
 
     if (6 === currentHour) {
-      $("#time6").addClass("present");
+      $("#time06").addClass("present");
     } else if (6 > currentHour) {
-      $("#time6").addClass("future");
+      $("#time06").addClass("future");
     } else {
-      $("#time6").addClass("past")
+      $("#time06").addClass("past")
     }
 
     if (7 === currentHour) {
-      $("#time7").addClass("present");
+      $("#time07").addClass("present");
     } else if (7 > currentHour) {
-      $("#time7").addClass("future");
+      $("#time07").addClass("future");
     } else {
-      $("#time7").addClass("past")
+      $("#time07").addClass("past")
     }
 
     if (8 === currentHour) {
-      $("#time8").addClass("present");
+      $("#time08").addClass("present");
     } else if (8 > currentHour) {
-      $("#time8").addClass("future");
+      $("#time08").addClass("future");
     } else {
-      $("#time8").addClass("past")
+      $("#time08").addClass("past")
     }
 
     if (9 === currentHour) {
-      $("#time9").addClass("present");
+      $("#time09").addClass("present");
     } else if (9 > currentHour) {
-      $("#time9").addClass("future");
+      $("#time09").addClass("future");
     } else {
-      $("#time9").addClass("past")
+      $("#time09").addClass("past")
     }
 
     if (10 === currentHour) {
@@ -267,4 +272,126 @@ $(document).ready(function(){
       $("#time24").addClass("past")
     }
 
+    
+    //Local Storage
+
+    $(".btn01").click(function() {
+      localStorage.btn01 = $('#time01').val();
+      $("#time01").val(localStorage.btn01);
+    });
+    
+    $(".btn02").click(function() {
+      localStorage.btn02 = $('#time02').val();
+      $("#time02").val(localStorage.btn02);
+    });
+    
+    $(".btn03").click(function() {
+      localStorage.btn03 = $('#time03').val();
+      $("#time03").val(localStorage.btn03);
+    });
+
+    $(".btn04").click(function() {
+      localStorage.btn04 = $('#time04').val();
+      $("#time04").val(localStorage.btn04);
+    });
+
+    $(".btn05").click(function() {
+      localStorage.btn05 = $('#time05').val();
+      $("#time05").val(localStorage.btn05);
+    });
+
+    $(".btn06").click(function() {
+      localStorage.btn06 = $('#time06').val();
+      $("#time06").val(localStorage.btn06);
+    });
+
+    $(".btn07").click(function() {
+      localStorage.btn07 = $('#time07').val();
+      $("#time07").val(localStorage.btn07);
+    });
+
+    $(".btn08").click(function() {
+      localStorage.btn08 = $('#time08').val();
+      $("#time08").val(localStorage.btn08);
+    });
+
+    $(".btn09").click(function() {
+      localStorage.btn09 = $('#time09').val();
+      $("#time09").val(localStorage.btn09);
+    });
+
+    $(".btn10").click(function() {
+      localStorage.btn10 = $('#time10').val();
+      $("#time10").val(localStorage.btn10);
+    });
+
+    $(".btn11").click(function() {
+      localStorage.btn11 = $('#time11').val();
+      $("#time11").val(localStorage.btn11);
+    });
+
+    $(".btn12").click(function() {
+      localStorage.btn12 = $('#time12').val();
+      $("#time12").val(localStorage.btn12);
+    });
+
+    $(".btn13").click(function() {
+      localStorage.btn13 = $('#time13').val();
+      $("#time13").val(localStorage.btn13);
+    });
+
+    $(".btn14").click(function() {
+      localStorage.btn14 = $('#time14').val();
+      $("#time14").val(localStorage.btn14);
+    });
+
+    $(".btn15").click(function() {
+      localStorage.btn15 = $('#time15').val();
+      $("#time15").val(localStorage.btn15);
+    });
+
+    $(".btn16").click(function() {
+      localStorage.btn16 = $('#time16').val();
+      $("#time16").val(localStorage.btn16);
+    });
+
+    $(".btn17").click(function() {
+      localStorage.btn17 = $('#time17').val();
+      $("#time17").val(localStorage.btn17);
+    });
+
+    $(".btn18").click(function() {
+      localStorage.btn18 = $('#time18').val();
+      $("#time18").val(localStorage.btn18);
+    });
+
+    $(".btn19").click(function() {
+      localStorage.btn19 = $('#time19').val();
+      $("#time19").val(localStorage.btn19);
+    });
+
+    $(".btn20").click(function() {
+      localStorage.btn20 = $('#time20').val();
+      $("#time20").val(localStorage.btn20);
+    });
+
+    $(".btn21").click(function() {
+      localStorage.btn21 = $('#time21').val();
+      $("#time21").val(localStorage.btn21);
+    });
+
+    $(".btn22").click(function() {
+      localStorage.btn22 = $('#time22').val();
+      $("#time22").val(localStorage.btn22);
+    });
+
+    $(".btn23").click(function() {
+      localStorage.btn23 = $('#time23').val();
+      $("#time23").val(localStorage.btn23);
+    });
+
+    $(".btn24").click(function() {
+      localStorage.btn24 = $('#time24').val();
+      $("#time24").val(localStorage.btn24);
+    });
 });
