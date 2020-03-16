@@ -240,6 +240,10 @@ footer p {
 .short-text {
 	display: none;
 }
+
+button > *{
+	pointer-events: none;
+}
   
 @media screen and (max-width: 768px) {
 	

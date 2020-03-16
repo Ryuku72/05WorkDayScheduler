@@ -74,472 +74,486 @@ $(document).ready(function(){
 
   renderLastRegisted();
   eventPlaceholder();
+  colourHue();
 
   function renderLastRegisted(){
-    $("#time01").val(localStorage.Time01AM);
-    $("#time02").val(localStorage.Time02AM);
-    $("#time03").val(localStorage.Time03AM);
-    $("#time04").val(localStorage.Time04AM);
-    $("#time05").val(localStorage.Time05AM);
-    $("#time06").val(localStorage.Time06AM);
-    $("#time07").val(localStorage.Time07AM);
-    $("#time08").val(localStorage.Time08AM);
-    $("#time09").val(localStorage.Time09AM);
-    $("#time10").val(localStorage.Time10AM);
-    $("#time11").val(localStorage.Time11AM);
-    $("#time12").val(localStorage.Time12PM);
-    $("#time13").val(localStorage.Time01PM);
-    $("#time14").val(localStorage.Time02PM);
-    $("#time15").val(localStorage.Time03PM);
-    $("#time16").val(localStorage.Time04PM);
-    $("#time17").val(localStorage.Time05PM);
-    $("#time18").val(localStorage.Time06PM);
-    $("#time19").val(localStorage.Time07PM);
-    $("#time20").val(localStorage.Time08PM);
-    $("#time21").val(localStorage.Time09PM);
-    $("#time22").val(localStorage.Time10PM);
-    $("#time23").val(localStorage.Time11PM);
-    $("#time24").val(localStorage.Time12AM);
+    $(".time01").val(localStorage.Time01AM);
+    $(".time02").val(localStorage.Time02AM);
+    $(".time03").val(localStorage.Time03AM);
+    $(".time04").val(localStorage.Time04AM);
+    $(".time05").val(localStorage.Time05AM);
+    $(".time06").val(localStorage.Time06AM);
+    $(".time07").val(localStorage.Time07AM);
+    $(".time08").val(localStorage.Time08AM);
+    $(".time09").val(localStorage.Time09AM);
+    $(".time10").val(localStorage.Time10AM);
+    $(".time11").val(localStorage.Time11AM);
+    $(".time12").val(localStorage.Time12PM);
+    $(".time13").val(localStorage.Time01PM);
+    $(".time14").val(localStorage.Time02PM);
+    $(".time15").val(localStorage.Time03PM);
+    $(".time16").val(localStorage.Time04PM);
+    $(".time17").val(localStorage.Time05PM);
+    $(".time18").val(localStorage.Time06PM);
+    $(".time19").val(localStorage.Time07PM);
+    $(".time20").val(localStorage.Time08PM);
+    $(".time21").val(localStorage.Time09PM);
+    $(".time22").val(localStorage.Time10PM);
+    $(".time23").val(localStorage.Time11PM);
+    $(".time24").val(localStorage.Time12AM);
   }
 
   var currentHour = date.getHours();
   //console.log(currentHour);
 
   //Colour Hue
-     
+   function colourHue(){  
     if (1 === currentHour) {
-      $("#time01").addClass("present");
+      $(".time01").addClass("present");
     } else if (1 > currentHour) {
-      $("#time01").addClass("future");
+      $(".time01").addClass("future");
     } else {
-      $("#time01").addClass("past")
+      $(".time01").addClass("past")
     }
 
     if (2 === currentHour) {
-      $("#time2").addClass("present");
+      $(".time2").addClass("present");
     } else if (2 > currentHour) {
-      $("#time02").addClass("future");
+      $(".time02").addClass("future");
     } else {
-      $("#time02").addClass("past")
+      $(".time02").addClass("past")
     }
 
     if (3 === currentHour) {
-      $("#time03").addClass("present");
+      $(".time03").addClass("present");
     } else if (3 > currentHour) {
-      $("#time03").addClass("future");
+      $(".time03").addClass("future");
     } else {
-      $("#time03").addClass("past")
+      $(".time03").addClass("past")
     }
 
     if (4 === currentHour) {
-      $("#time04").addClass("present");
+      $(".time04").addClass("present");
     } else if (4 > currentHour) {
-      $("#time04").addClass("future");
+      $(".time04").addClass("future");
     } else {
-      $("#time04").addClass("past")
+      $(".time04").addClass("past")
     }
 
     if (5 === currentHour) {
-      $("#time05").addClass("present");
+      $(".time05").addClass("present");
     } else if (5 > currentHour) {
-      $("#time05").addClass("future");
+      $(".time05").addClass("future");
     } else {
-      $("#time05").addClass("past")
+      $(".time05").addClass("past")
     }
 
     if (6 === currentHour) {
-      $("#time06").addClass("present");
+      $(".time06").addClass("present");
     } else if (6 > currentHour) {
-      $("#time06").addClass("future");
+      $(".time06").addClass("future");
     } else {
-      $("#time06").addClass("past")
+      $(".time06").addClass("past")
     }
 
     if (7 === currentHour) {
-      $("#time07").addClass("present");
+      $(".time07").addClass("present");
     } else if (7 > currentHour) {
-      $("#time07").addClass("future");
+      $(".time07").addClass("future");
     } else {
-      $("#time07").addClass("past")
+      $(".time07").addClass("past")
     }
 
     if (8 === currentHour) {
-      $("#time08").addClass("present");
+      $(".time08").addClass("present");
     } else if (8 > currentHour) {
-      $("#time08").addClass("future");
+      $(".time08").addClass("future");
     } else {
-      $("#time08").addClass("past")
+      $(".time08").addClass("past")
     }
 
     if (9 === currentHour) {
-      $("#time09").addClass("present");
+      $(".time09").addClass("present");
     } else if (9 > currentHour) {
-      $("#time09").addClass("future");
+      $(".time09").addClass("future");
     } else {
-      $("#time09").addClass("past")
+      $(".time09").addClass("past")
     }
 
     if (10 === currentHour) {
-      $("#time10").addClass("present");
+      $(".time10").addClass("present");
     } else if (10 > currentHour) {
-      $("#time10").addClass("future");
+      $(".time10").addClass("future");
     } else {
-      $("#time10").addClass("past")
+      $(".time10").addClass("past")
     }
 
     if (11 === currentHour) {
-      $("#time11").addClass("present");
+      $(".time11").addClass("present");
     } else if (11 > currentHour) {
-      $("#time11").addClass("future");
+      $(".time11").addClass("future");
     } else {
-      $("#time11").addClass("past")
+      $(".time11").addClass("past")
     }
 
     if (12 === currentHour) {
-      $("#time12").addClass("present");
+      $(".time12").addClass("present");
     } else if (12 > currentHour) {
-      $("#time12").addClass("future");
+      $(".time12").addClass("future");
     } else {
-      $("#time12").addClass("past")
+      $(".time12").addClass("past")
     }
     
     if (13 === currentHour) {
-      $("#time13").addClass("present");
+      $(".time13").addClass("present");
     } else if (13 > currentHour) {
-      $("#time13").addClass("future");
+      $(".time13").addClass("future");
     } else {
-      $("#time13").addClass("past")
+      $(".time13").addClass("past")
     }
 
     if (14 === currentHour) {
-      $("#time14").addClass("present");
+      $(".time14").addClass("present");
     } else if (14 > currentHour) {
-      $("#time14").addClass("future");
+      $(".time14").addClass("future");
     } else {
-      $("#time14").addClass("past")
+      $(".time14").addClass("past")
     }
 
     if (15 === currentHour) {
-      $("#time15").addClass("present");
+      $(".time15").addClass("present");
     } else if (15 > currentHour) {
-      $("#time15").addClass("future");
+      $(".time15").addClass("future");
     } else {
-      $("#time15").addClass("past")
+      $(".time15").addClass("past")
     }
 
     if (16 === currentHour) {
-      $("#time16").addClass("present");
+      $(".time16").addClass("present");
     } else if (16 > currentHour) {
-      $("#time16").addClass("future");
+      $(".time16").addClass("future");
     } else {
-      $("#time16").addClass("past")
+      $(".time16").addClass("past")
     }
 
     if (17 === currentHour) {
-      $("#time17").addClass("present");
+      $(".time17").addClass("present");
     } else if (17 > currentHour) {
-      $("#time17").addClass("future");
+      $(".time17").addClass("future");
     } else {
-      $("#time17").addClass("past")
+      $(".time17").addClass("past")
     }
 
     if (18 === currentHour) {
-      $("#time18").addClass("present");
+      $(".time18").addClass("present");
     } else if (18 > currentHour) {
-      $("#time18").addClass("future");
+      $(".time18").addClass("future");
     } else {
-      $("#time18").addClass("past")
+      $(".time18").addClass("past")
     }
 
     if (19 === currentHour) {
-      $("#time19").addClass("present");
+      $(".time19").addClass("present");
     } else if (19 > currentHour) {
-      $("#time19").addClass("future");
+      $(".time19").addClass("future");
     } else {
-      $("#time19").addClass("past")
+      $(".time19").addClass("past")
     }
 
     if (20 === currentHour) {
-      $("#time20").addClass("present");
+      $(".time20").addClass("present");
     } else if (20 > currentHour) {
-      $("#time20").addClass("future");
+      $(".time20").addClass("future");
     } else {
-      $("#time20").addClass("past")
+      $(".time20").addClass("past")
     }
 
     if (21 === currentHour) {
-      $("#time21").addClass("present");
+      $(".time21").addClass("present");
     } else if (21 > currentHour) {
-      $("#time21").addClass("future");
+      $(".time21").addClass("future");
     } else {
-      $("#time21").addClass("past")
+      $(".time21").addClass("past")
     }
 
     if (22 === currentHour) {
-      $("#time22").addClass("present");
+      $(".time22").addClass("present");
     } else if (22 > currentHour) {
-      $("#time22").addClass("future");
+      $(".time22").addClass("future");
     } else {
-      $("#time22").addClass("past")
+      $(".time22").addClass("past")
     }
 
     if (23 === currentHour) {
-      $("#time23").addClass("present");
+      $(".time23").addClass("present");
     } else if (23 > currentHour) {
-      $("#time23").addClass("future");
+      $(".time23").addClass("future");
     } else {
-      $("#time23").addClass("past")
+      $(".time23").addClass("past")
     }
 
     if (24 === currentHour) {
-      $("#time24").addClass("present");
+      $(".time24").addClass("present");
     } else if (24 > currentHour) {
-      $("#time24").addClass("future");
+      $(".time24").addClass("future");
     } else {
-      $("#time24").addClass("past")
+      $(".time24").addClass("past")
     }
+  };
 
     //Local Storage
  
-    $(".btn01").click(function() {
-      if ($('#time01').val() === '') {
+    $("#time01AM").click(function() {
+      if ($('.time01').val() === '') {
       alert("No plans has been entered...")
       return
       } 
       else {
-        localStorage.Time01AM = $('#time01').val();
+        localStorage.Time01AM = $('.time01').val();
       };
     });
 
-    $(".btn02").click(function() {
-      if ($('#time02').val() === '') {
+    $("#time02AM").click(function() {
+      if ($('.time02').val() === '') {
       alert("No plans has been entered...")
       return
       } 
       else {
-        localStorage.Time02AM = $('#time02').val();
+        localStorage.Time02AM = $('.time02').val();
       };
     });
 
-    $(".btn03").click(function() {
-      if ($('#time03').val() === '') {
+    $("#time03AM").click(function() {
+      if ($('.time03').val() === '') {
       alert("No plans has been entered...")
       return
       } 
       else {
-        localStorage.Time03AM = $('#time03').val();
+        localStorage.Time03AM = $('.time03').val();
       };
 
-      $(".btn04").click(function() {
-        if ($('#time04').val() === '') {
+      $("#time04AM").click(function() {
+        if ($('.time04').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time04AM = $('#time04').val();
+          localStorage.Time04AM = $('.time04').val();
         };
       });
     });
 
-    $(".btn05").click(function() {
-      if ($('#time015').val() === '') {
+    $("#time05AM").click(function() {
+      if ($('.time05').val() === '') {
       alert("No plans has been entered...")
       return
       } 
       else {
-        localStorage.Time05AM = $('#time05').val();
+        localStorage.Time05AM = $('.time05').val();
       };
     });
 
-    $(".btn06").click(function() {
-      if ($('#time06').val() === '') {
+    $("#time06AM").click(function() {
+      if ($('.time06').val() === '') {
       alert("No plans has been entered...")
       return
       } 
       else {
-        localStorage.Time06AM = $('#time06').val();
+        localStorage.Time06AM = $('.time06').val();
       };
     });
 
-    $(".btn07").click(function() {
-      if ($('#time07').val() === '') {
+    $("#time07AM").click(function() {
+      if ($('.time07').val() === '') {
       alert("No plans has been entered...")
       return
       } 
       else {
-        localStorage.Time07AM = $('#time07').val();
+        localStorage.Time07AM = $('.time07').val();
       };
     });
 
-    $(".btn08").click(function() {
-      if ($('#time08').val() === '') {
+    $("#time08AM").click(function() {
+      if ($('.time08').val() === '') {
       alert("No plans has been entered...")
       return
       } 
       else {
-        localStorage.Time08AM = $('#time08').val();
+        localStorage.Time08AM = $('.time08').val();
       };
     });
 
-    $(".btn09").click(function() {
-      if ($('#time09').val() === '') {
+    $("#time09AM").click(function() {
+      if ($('.time09').val() === '') {
       alert("No plans has been entered...")
       return
       } 
       else {
-        localStorage.Time09AM = $('#time09').val();
+        localStorage.Time09AM = $('.time09').val();
       };
     });
 
-      $(".btn10").click(function() {
-        if ($('#time10').val() === '') {
+      $("#time10AM").click(function() {
+        if ($('.time10').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time10AM = $('#time10').val();
+          localStorage.Time10AM = $('.time10').val();
         };
       });
 
-      $(".btn11").click(function() {
-        if ($('#time10').val() === '') {
+      $("#time11AM").click(function() {
+        if ($('.time11').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time11AM = $('#time11').val();
+          localStorage.Time11AM = $('.time11').val();
         };
       });
 
-      $(".btn12").click(function() {
-        if ($('#time12').val() === '') {
+      $("#time12PM").click(function() {
+        if ($('.time12').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time12PM = $('#time12').val();
+          localStorage.Time12PM = $('.time12').val();
         };
       });
 
-      $(".btn13").click(function() {
-        if ($('#time13').val() === '') {
+      $("#time01PM").click(function() {
+        if ($('.time13').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time01PM = $('#time13').val();
+          localStorage.Time01PM = $('.time13').val();
         };
       });
 
-      $(".btn14").click(function() {
-        if ($('#time14').val() === '') {
+      $("#time02PM").click(function() {
+        if ($('.time14').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time02PM = $('#time14').val();
+          localStorage.Time02PM = $('.time14').val();
         };
       });
 
-      $(".btn15").click(function() {
-        if ($('#time15').val() === '') {
+      $("#time03PM").click(function() {
+        if ($('.time15').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time03PM = $('#time15').val();
+          localStorage.Time03PM = $('.time15').val();
         };
       });
       
-      $(".btn16").click(function() {
-        if ($('#time16').val() === '') {
+      $("#time04PM").click(function() {
+        if ($('.time16').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time04PM = $('#time16').val();
+          localStorage.Time04PM = $('.time16').val();
         };
       });
 
-      $(".btn17").click(function() {
-        if ($('#time17').val() === '') {
+      $("#time05PM").click(function() {
+        if ($('.time17').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time05PM = $('#time17').val();
+          localStorage.Time05PM = $('.time17').val();
         };
       });
 
-      $(".btn18").click(function() {
-        if ($('#time18').val() === '') {
+      $("#time06PM").click(function() {
+        if ($('.time18').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time06PM = $('#time18').val();
+          localStorage.Time06PM = $('.time18').val();
         };
       });
 
-      $(".btn19").click(function() {
-        if ($('#time19').val() === '') {
+      $("#time07PM").click(function() {
+        if ($('.time19').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time07PM = $('#time19').val();
+          localStorage.Time07PM = $('.time19').val();
         };
       });
 
-      $(".btn20").click(function() {
-        if ($('#time20').val() === '') {
+      $("#time08PM").click(function() {
+        if ($('.time20').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time08PM = $('#time20').val();
+          localStorage.Time08PM = $('.time20').val();
         };
       });
 
-      $(".btn21").click(function() {
-        if ($('#time21').val() === '') {
+      $("#time09PM").click(function() {
+        if ($('.time21').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time09PM = $('#time21').val();
+          localStorage.Time09PM = $('.time21').val();
         };
       });
 
-      $(".btn22").click(function() {
-        if ($('#time22').val() === '') {
+      $("#time10PM").click(function() {
+        if ($('.time22').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time10PM = $('#time22').val();
+          localStorage.Time09PM = $('.time22').val();
         };
       });
 
-      $(".btn23").click(function() {
-        if ($('#time23').val() === '') {
+      $("#time11PM").click(function() {
+        if ($('.time23').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time11PM = $('#time23').val();
+          localStorage.Time11PM = $('.time23').val();
         };
       });
 
-      $(".btn24").click(function() {
-        if ($('#time24').val() === '') {
+      $("#time12AM").click(function() {
+        if ($('.time24').val() === '') {
         alert("No plans has been entered...")
         return
         } 
         else {
-          localStorage.Time12AM = $('#time24').val();
+          localStorage.Time12AM = $('.time24').val();
         };
       });
+
+      /* var textAuraEl = $('#main');
+    textAuraEl.click(storeText);
+
+      function storeText (e){
+        if (e.target !== e.currentTarget && e.target.nodeName === 'BUTTON') {
+          var clickedItem = e.target.id;
+          console.log(clickedItem);
+        }
+
+        e.stopPropagation();
+    }*/
 
       //change placeholder text at different width
 
