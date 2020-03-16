@@ -133,9 +133,10 @@ body {
 	border: none;
 	resize: none;
 	padding: 10px;
-	line-height: 5vh;
+	line-height: 3vh;
 	text-align: center;
 	border: 1px solid grey;
+	overflow: hidden;
   }
 
   .description{
