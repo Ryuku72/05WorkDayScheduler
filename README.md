@@ -51,13 +51,13 @@ To be fancy I did add a blinking element to the time-block.
 
 This is where the bulk of my time theorizing began. This week we started JQuery and its intension is to make things easiser and faster to code. Whilst in theory this is fine it brought up many questions. When to use JQuery and when to use Vanilla Javascript. So far my answer is use JQuery for anything that exists in Document.Body and Javascript for the DOM. Whilst I am sure the clock could be done with JQuery thus Moments.js I just chose to go with Javascript
 
-Next problem, there are really 5 main functions in the Script.js; updateClock, renderLastRegistered, colourHue, localStorage, eventPlaceholder
+Next problem, there are really 6 main functions in the Script.js; updateClock, renderLastRegistered, colourHue, localStorage, eventPlaceholder, checkDates.
 
 Whilst the clock was a very simple the next 4 elements had a lot of repetition. This is where I started thinking alot of bubbling, stoppropagation and loops. 
 
 The easy stuff...
 
-Colue Hue was a simple function that based a colour depending on the 'hour' of the day. To achieve this I made a simple if,else if, else statement based on currentHour which I had made global. EventPlaceholder function was used to maniopulate the textarea placeholder when the window size became below 768. The concept was found on stackoverflow forums as I was unable to achieve this via simple CSS.
+Colour Hue was a simple function that based a colour depending on the 'hour' of the day. To achieve this I made a simple if,else if, else statement based on currentHour which I had made global. EventPlaceholder function was used to maniopulate the textarea placeholder when the window size became below 768. The concept was found on stackoverflow forums as I was unable to achieve this via simple CSS. CheckDates function was about compares dates and clear local storage if dates are different.
 
 The hard and integrated issue...
 

@@ -75,6 +75,7 @@ $(document).ready(function(){
   renderLastRegisted();
   eventPlaceholder();
   colourHue();
+  checkDate();
 
   function renderLastRegisted(){
     $(".time01").val(localStorage.Time01AM);
@@ -547,13 +548,29 @@ $(document).ready(function(){
     textAuraEl.click(storeText);
 
       function storeText (e){
-        if (e.target !== e.currentTarget && e.target.nodeName === 'BUTTON') {
-          var clickedItem = e.target.id;
+        z
           console.log(clickedItem);
         }
 
         e.stopPropagation();
     }*/
+
+    // Check date and clear if not same date
+
+    function checkDate() {
+
+      var lastclear = localStorage.getItem('lastclear'),
+          time_now  = (new Date()).getTime();
+    
+      // .getTime() returns milliseconds so 1000 * 60 * 60 * 24 = 24 days
+      if ((time_now - lastclear) > 1000 * 60 * 60 * 24) {
+    
+        localStorage.clear();
+    
+        localStorage.setItem('lastclear', time_now);
+      }
+    
+    }
 
       //change placeholder text at different width
 
