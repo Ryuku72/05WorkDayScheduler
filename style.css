@@ -55,13 +55,13 @@ body {
 	font-size: 16px;
 	line-height: 1;
 	background-color: white;
-	background-image: url('/assets/stars.gif');
+	background-image: url('./assets/stars.gif');
 	background-size: 100% 100%;
   }
     
   .jumbotron {
 	text-align: center;
-	background-image: url('/assets/sheep.gif'), url('/assets/cat.gif'), url('/assets/dog.gif');
+	background-image: url('./assets/sheep.gif'), url('./assets/cat.gif'), url('./assets/dog.gif');
 	background-position: left, center, right;
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-color: black;
