@@ -77,6 +77,22 @@ $(document).ready(function(){
   colourHue();
   checkDate();
 
+
+  function checkDate() {
+
+    var lastclear = localStorage.getItem('lastclear');
+    var time_now  = (new Date()).getTime();
+  
+    // .getTime() returns milliseconds so 1000 * 60 * 60 * 24 = 24 days
+    if ((time_now - lastclear) > 1000 * 60 * 60 * 24) {
+  
+      localStorage.clear();
+  
+      localStorage.lastclear = time_now;
+    }
+  
+  }
+
   function renderLastRegisted(){
     $(".time01").val(localStorage.Time01AM);
     $(".time02").val(localStorage.Time02AM);
@@ -557,20 +573,6 @@ $(document).ready(function(){
 
     // Check date and clear if not same date
 
-    function checkDate() {
-
-      var lastclear = localStorage.getItem('lastclear'),
-          time_now  = (new Date()).getTime();
-    
-      // .getTime() returns milliseconds so 1000 * 60 * 60 * 24 = 24 days
-      if ((time_now - lastclear) > 1000 * 60 * 60 * 24) {
-    
-        localStorage.clear();
-    
-        localStorage.setItem('lastclear', time_now);
-      }
-    
-    }
 
       //change placeholder text at different width
 
