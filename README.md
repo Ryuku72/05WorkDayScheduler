@@ -1,9 +1,11 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/HomeworkW5?style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/HomeworkW5?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/HomeworkW5?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/Ryuku72/05WorkDayScheduler?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Ryuku72/05WorkDayScheduler?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Ryuku72/05WorkDayScheduler?style=for-the-badge)
 
-## HomeworkW5
-Daily Planner
+# WorkDay Scheduler
+__PROJECT05: 18 Mar 2020__
+<br>
+https://ryuku72.github.io/05WorkDayScheduler/
 
 
 ## Aim // Introduction
